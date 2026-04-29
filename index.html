@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ahmad Abdullatif Wahbeh — Data Scientist & AI Engineer specializing in NLP, Agentic RAG, and enterprise AI pipelines. GPA 3.78/4 · 4× Dean's Honor Roll · JUST." />
+  <meta name="author" content="Ahmad Abdullatif Wahbeh" />
+  <meta name="keywords" content="Ahmad Wahbeh, Data Scientist, AI Engineer, NLP, Machine Learning, Agentic RAG, JUST, Jordan University" />
+  <meta property="og:title" content="Ahmad Wahbeh | Data Scientist & AI Engineer" />
+  <meta property="og:description" content="Building intelligent systems that bridge cutting-edge AI research with real-world enterprise impact." />
+  <meta property="og:type" content="website" />
+  <title>Ahmad Wahbeh | Data Scientist & AI Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== LOADING SCREEN ===== -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-bracket">&lt;</span>
+      <span class="loader-name">AW</span>
+      <span class="loader-bracket">/&gt;</span>
+    </div>
+    <div class="loader-bar-track"><div class="loader-bar"></div></div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header id="navbar" role="banner">
+    <nav class="nav-container" aria-label="Main Navigation">
+      <a href="#home" class="nav-logo" aria-label="Home">
+        <span class="logo-bracket">&lt;</span>AW<span class="logo-bracket">/&gt;</span>
+      </a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-links" class="nav-links" role="list">
+        <li><a href="#home"            class="nav-link" data-section="home">Home</a></li>
+        <li><a href="#about"           class="nav-link" data-section="about">About</a></li>
+        <li><a href="#certifications"  class="nav-link" data-section="certifications">Education</a></li>
+        <li><a href="#skills"          class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects"        class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#contact"         class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="section hero-section" aria-label="Introduction">
+      <canvas id="particle-canvas" aria-hidden="true"></canvas>
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-orb orb-1" aria-hidden="true"></div>
+      <div class="hero-orb orb-2" aria-hidden="true"></div>
+
+      <div class="hero-split">
+
+        <!-- Left -->
+        <div class="hero-left">
+          <div class="hero-available-badge fade-in-up" style="--delay:0.05s">
+            <span class="avail-dot"></span>
+            Open to New Opportunities &amp; Collaborations
+          </div>
+
+          <p class="hero-greeting fade-in-up" style="--delay:0.15s">Hi there, I'm</p>
+          <h1 class="hero-name fade-in-up" style="--delay:0.3s">Ahmad Wahbeh.</h1>
+          <h2 class="hero-title fade-in-up" style="--delay:0.45s">
+            Data Scientist <span class="amp">&amp;</span> AI Engineer.
+          </h2>
+          <p class="hero-bio fade-in-up" style="--delay:0.58s">
+            Building <span class="accent">intelligent systems</span> that bridge
+            cutting-edge AI research with real-world enterprise impact — from
+            <span class="accent">Agentic RAG pipelines</span> to Arabic NLP research
+            and enterprise AI integration.
+          </p>
+
+          <div class="hero-stat-strip fade-in-up" style="--delay:0.7s" aria-label="Academic achievements">
+            <div class="hss-item">
+              <i class="ph ph-chart-line-up" aria-hidden="true"></i>
+              <span class="hss-val">3.78<span class="hss-denom">/4</span></span>
+              <span class="hss-label">GPA</span>
+            </div>
+            <div class="hss-divider" aria-hidden="true"></div>
+            <div class="hss-item">
+              <i class="ph ph-trophy" aria-hidden="true"></i>
+              <span class="hss-val">4×</span>
+              <span class="hss-label">Dean's Honor Roll</span>
+            </div>
+            <div class="hss-divider" aria-hidden="true"></div>
+            <div class="hss-item">
+              <i class="ph ph-graduation-cap" aria-hidden="true"></i>
+              <span class="hss-val">JUST</span>
+              <span class="hss-label">Senior Year</span>
+            </div>
+          </div>
+
+          <div class="hero-cta fade-in-up" style="--delay:0.82s">
+            <a href="#projects" class="btn btn-primary">
+              <i class="ph ph-folder-open" aria-hidden="true"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="ph ph-paper-plane-tilt" aria-hidden="true"></i> Get In Touch
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Profile Card -->
+        <div class="hero-right" aria-hidden="true">
+          <div class="profile-card glass fade-in-up" style="--delay:0.4s">
+            <div class="profile-ring-wrap">
+              <div class="profile-ring">
+                <img
+                  src="ahmad_headshot.jpg"
+                  alt="Ahmad Wahbeh profile photo"
+                  class="profile-img"
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+                />
+                <div class="profile-img-placeholder">
+                  <i class="ph ph-user-circle"></i>
+                </div>
+              </div>
+              <span class="profile-status-dot" aria-label="Available for work"></span>
+            </div>
+
+            <div class="profile-identity">
+              <p class="profile-name">Ahmad Abdullatif Wahbeh</p>
+              <p class="profile-role">Data Scientist · AI Engineer</p>
+            </div>
+
+            <div class="profile-stats-row">
+              <div class="psr-item">
+                <span class="psr-val" id="gpa-counter">3.78</span>
+                <span class="psr-label">GPA</span>
+              </div>
+              <div class="psr-sep"></div>
+              <div class="psr-item">
+                <span class="psr-val">4×</span>
+                <span class="psr-label">Honor Roll</span>
+              </div>
+            </div>
+
+            <div class="profile-card-footer">
+              <span class="pcf-dot"></span>
+              <span>Currently at JUST · Senior Year</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hero-scroll-hint fade-in-up" style="--delay:1.1s" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section about-section" aria-label="About Me">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// about_me</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a <strong>Senior Data Science student</strong> at the
+              <strong>Jordan University of Science and Technology (JUST)</strong>,
+              on a mission to push the boundaries of what AI can achieve
+              in real-world enterprise and research environments.
+            </p>
+            <p>
+              My work centers on <span class="accent">Natural Language Processing</span>,
+              designing and deploying complex <span class="accent">AI pipelines</span>
+              that automate reasoning and retrieval — including
+              <span class="accent">Agentic RAG systems</span> capable of
+              multi-step knowledge extraction from massive corpora.
+            </p>
+            <p>
+              Beyond model building, I am deeply invested in
+              <span class="accent">data analysis</span> and translating
+              messy, real-world datasets into clear, actionable insights
+              that drive business decisions. My projects span enterprise ERP
+              intelligence, Arabic NLP research, and full-stack AI product deployments.
+            </p>
+          </div>
+          <div class="about-card glass reveal" style="--delay:0.15s">
+            <div class="about-stat-grid">
+              <div class="stat-item">
+                <span class="stat-num">12+</span>
+                <span class="stat-label">AI Projects Shipped</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">NLP</span>
+                <span class="stat-label">Primary Speciality</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">RAG</span>
+                <span class="stat-label">Agentic Systems</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">JUST</span>
+                <span class="stat-label">Senior Year</span>
+              </div>
+            </div>
+            <div class="about-currently">
+              <span class="currently-dot"></span>
+              <span>Currently open to internships &amp; collaborations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROFESSIONAL CERTIFICATIONS ===== -->
+    <section id="certifications" class="section cert-section" aria-label="Education and Certifications">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// education_&amp;_certs</span>
+          <h2 class="section-title">Professional Certifications</h2>
+        </div>
+
+        <!-- Degree Card (Featured) -->
+        <div class="degree-card glass reveal" style="--delay:0s">
+          <div class="degree-badge-col">
+            <div class="cert-badge badge-bs">BS</div>
+          </div>
+          <div class="degree-body">
+            <div class="degree-meta-row">
+              <span class="degree-issuer-name">Jordan University of Science and Technology (JUST)</span>
+              <span class="degree-date-range">2022 – 2026</span>
+            </div>
+            <h3 class="degree-title">Bachelor of Science in Data Science</h3>
+            <p class="degree-desc">
+              Pursuing a B.Sc. in Data Science with a cumulative GPA of 3.78/4.00.
+              Relevant coursework includes Machine Learning, Deep Learning, Natural Language Processing,
+              Big Data Analytics, Computer Vision, and Database Systems.
+            </p>
+          </div>
+          <div class="degree-achievements">
+            <div class="deg-ach-chip">
+              <i class="ph ph-chart-line-up" aria-hidden="true"></i>
+              GPA: 3.78 / 4.00
+            </div>
+            <div class="deg-ach-chip deg-ach-gold">
+              <i class="ph ph-trophy" aria-hidden="true"></i>
+              4× Dean's Honor Roll
+            </div>
+          </div>
+        </div>
+
+        <!-- Certification Cards Grid (2×2) -->
+        <div class="cert-grid">
+
+          <!-- Cert 1: RAG -->
+          <div class="cert-card glass reveal" style="--delay:0.05s">
+            <div class="cert-card-top">
+              <div class="cert-badge badge-dl">DL</div>
+              <p class="cert-issuer-name">DeepLearning.AI (via Coursera)</p>
+            </div>
+            <h3 class="cert-title">Retrieval Augmented Generation (RAG)</h3>
+            <p class="cert-desc">
+              Mastered the architectural implementation of RAG systems to enhance Large Language Models
+              with external knowledge. Gained hands-on expertise in vector databases and building
+              context-aware AI applications.
+            </p>
+            <div class="cert-tags">
+              <span class="cert-tag tag-teal">RAG</span>
+              <span class="cert-tag tag-blue">Vector Databases</span>
+              <span class="cert-tag tag-purple">LLMs</span>
+              <span class="cert-tag tag-green">Generative AI</span>
+            </div>
+            <a href="https://drive.google.com/file/d/1vShlp5Ytp7rVlaCXJptPhnnCAUJzbJtj/view?usp=sharing"
+               target="_blank" rel="noopener noreferrer" class="cert-btn">
+              <i class="ph ph-arrow-square-out" aria-hidden="true"></i> View Certificate
+            </a>
+          </div>
+
+          <!-- Cert 2: Transformers NLP (NVIDIA) -->
+          <div class="cert-card glass reveal" style="--delay:0.1s">
+            <div class="cert-card-top">
+              <div class="cert-badge badge-nv">NV</div>
+              <p class="cert-issuer-name">NVIDIA Deep Learning Institute</p>
+            </div>
+            <h3 class="cert-title">Building Transformer-Based NLP Applications</h3>
+            <p class="cert-desc">
+              Demonstrated competency in building transformer-based NLP applications. Covered fine-tuning
+              large language models, text classification, named entity recognition, and deploying
+              production-ready NLP pipelines.
+            </p>
+            <div class="cert-tags">
+              <span class="cert-tag tag-green">Transformers</span>
+              <span class="cert-tag tag-teal">NLP</span>
+              <span class="cert-tag tag-purple">Fine-tuning</span>
+              <span class="cert-tag tag-blue">Deep Learning</span>
+            </div>
+            <a href="https://drive.google.com/file/d/17rJ593fkyFKBeAF1eGuREuBY600nuFLx/view?usp=sharing"
+               target="_blank" rel="noopener noreferrer" class="cert-btn">
+              <i class="ph ph-arrow-square-out" aria-hidden="true"></i> View Certificate
+            </a>
+          </div>
+
+          <!-- Cert 3: Fundamentals of Deep Learning (NVIDIA) -->
+          <div class="cert-card glass reveal" style="--delay:0.15s">
+            <div class="cert-card-top">
+              <div class="cert-badge badge-nv">NV</div>
+              <p class="cert-issuer-name">NVIDIA Deep Learning Institute</p>
+            </div>
+            <h3 class="cert-title">Fundamentals of Deep Learning</h3>
+            <p class="cert-desc">
+              Established core competency in deep learning fundamentals through NVIDIA's official
+              curriculum. Covered neural network architecture, training optimization techniques,
+              convolutional networks, and deploying models using modern deep learning frameworks.
+            </p>
+            <div class="cert-tags">
+              <span class="cert-tag tag-green">Deep Learning</span>
+              <span class="cert-tag tag-teal">Neural Networks</span>
+              <span class="cert-tag tag-blue">CNNs</span>
+              <span class="cert-tag tag-purple">Model Training</span>
+            </div>
+            <a href="https://drive.google.com/file/d/1dDHScEGIVx0UB0LBH1fP5C_-f3HFRGqf/view?usp=sharing"
+               target="_blank" rel="noopener noreferrer" class="cert-btn">
+              <i class="ph ph-arrow-square-out" aria-hidden="true"></i> View Certificate
+            </a>
+          </div>
+
+          <!-- Cert 4: Data Parallelism (NVIDIA) -->
+          <div class="cert-card glass reveal" style="--delay:0.2s">
+            <div class="cert-card-top">
+              <div class="cert-badge badge-nv">NV</div>
+              <p class="cert-issuer-name">NVIDIA Deep Learning Institute</p>
+            </div>
+            <h3 class="cert-title">Data Parallelism: Training on Multiple GPUs</h3>
+            <p class="cert-desc">
+              Gained hands-on competency in distributed deep learning training using data parallelism
+              across multiple GPUs. Covered gradient synchronization, multi-GPU communication strategies,
+              and scaling model training pipelines for high-performance computing environments.
+            </p>
+            <div class="cert-tags">
+              <span class="cert-tag tag-teal">Data Parallelism</span>
+              <span class="cert-tag tag-green">Multi-GPU</span>
+              <span class="cert-tag tag-blue">Distributed Training</span>
+              <span class="cert-tag tag-purple">Deep Learning</span>
+            </div>
+            <a href="https://drive.google.com/file/d/1SbTHMkz-psyPdEVtl2UyduDcsxHc2yDc/view?usp=sharing"
+               target="_blank" rel="noopener noreferrer" class="cert-btn">
+              <i class="ph ph-arrow-square-out" aria-hidden="true"></i> View Certificate
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section skills-section" aria-label="Skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// tech_stack</span>
+          <h2 class="section-title">Skills</h2>
+        </div>
+        <div class="skills-grid">
+
+          <div class="skill-group glass reveal" style="--delay:0s">
+            <div class="skill-group-header">
+              <i class="ph ph-code" aria-hidden="true"></i>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="pill pill-secondary">Python</span>
+              <span class="pill pill-secondary">SQL</span>
+              <span class="pill pill-secondary">C++</span>
+              <span class="pill pill-secondary">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="skill-group glass reveal" style="--delay:0.07s">
+            <div class="skill-group-header">
+              <i class="ph ph-robot" aria-hidden="true"></i>
+              <h3>Generative AI &amp; NLP</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="pill pill-primary">LLMs</span>
+              <span class="pill pill-primary">AI Agents</span>
+              <span class="pill pill-primary">RAG</span>
+              <span class="pill pill-primary">BERT</span>
+              <span class="pill pill-primary">Arabic NLP</span>
+              <span class="pill pill-primary">Prompt Engineering</span>
+              <span class="pill pill-primary">Fine-Tuning</span>
+            </div>
+          </div>
+
+          <div class="skill-group glass reveal" style="--delay:0.14s">
+            <div class="skill-group-header">
+              <i class="ph ph-eye" aria-hidden="true"></i>
+              <h3>Deep Learning &amp; Vision</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="pill pill-tertiary">PyTorch</span>
+              <span class="pill pill-tertiary">Neural Networks</span>
+              <span class="pill pill-tertiary">Computer Vision</span>
+            </div>
+          </div>
+
+          <div class="skill-group glass reveal" style="--delay:0.21s">
+            <div class="skill-group-header">
+              <i class="ph ph-chart-line-up" aria-hidden="true"></i>
+              <h3>Data Science &amp; Analytics</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="pill pill-primary">Pandas</span>
+              <span class="pill pill-primary">NumPy</span>
+              <span class="pill pill-primary">Matplotlib</span>
+              <span class="pill pill-primary">Scikit-learn</span>
+              <span class="pill pill-primary">Power BI</span>
+              <span class="pill pill-primary">Feature Engineering</span>
+              <span class="pill pill-primary">Mathematical Modeling</span>
+            </div>
+          </div>
+
+          <div class="skill-group glass reveal" style="--delay:0.28s">
+            <div class="skill-group-header">
+              <i class="ph ph-cloud" aria-hidden="true"></i>
+              <h3>Data Engineering &amp; Cloud</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="pill pill-secondary">Vector Databases</span>
+              <span class="pill pill-secondary">Microsoft Azure</span>
+              <span class="pill pill-secondary">GitHub</span>
+              <span class="pill pill-secondary">Kaggle</span>
+              <span class="pill pill-secondary">Data Parallelism</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section projects-section" aria-label="Projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// selected_work</span>
+          <h2 class="section-title">Projects</h2>
+        </div>
+        <div class="projects-grid">
+
+          <!-- 01: ERP — IN PROGRESS -->
+          <article class="project-card glass reveal" style="--delay:0s" aria-label="Agentic AI ERP Sub-system">
+            <div class="card-inprogress-tag">In Progress</div>
+            <div class="card-number" aria-hidden="true">01</div>
+            <div class="card-top">
+              <div class="card-icon-wrap"><i class="ph ph-robot" aria-hidden="true"></i></div>
+              <div class="card-actions"></div>
+            </div>
+            <h3 class="card-title">Agentic AI ERP Sub-system (Graduation Project)</h3>
+            <p class="card-desc">
+              Currently developing an intelligent sub-system for a commercial ERP platform as a senior
+              graduation project. The core architecture features an advanced AI Agent equipped with three
+              specialized tools (Search, Analyze, and Prediction) to automate complex financial logic,
+              extract insights, and enhance enterprise decision-making.
+            </p>
+            <div class="card-tags">
+              <span class="pill pill-sm">AI Agents</span>
+              <span class="pill pill-sm">ERP Systems</span>
+              <span class="pill pill-sm">Predictive Analytics</span>
+              <span class="pill pill-sm">Business Intelligence</span>
+              <span class="pill pill-sm">Python</span>
+            </div>
+          </article>
+
+          <!-- 02: AFND — View Code + Live Demo -->
+          <article class="project-card glass reveal" style="--delay:0.05s" aria-label="Arabic Fake News Detection">
+            <div class="card-featured-tag">Featured</div>
+            <div class="card-number" aria-hidden="true">02</div>
+            <div class="card-top">
+              <div class="card-icon-wrap"><i class="ph ph-newspaper" aria-hidden="true"></i></div>
+              <div class="card-actions">
+                <a href="https://github.com/AhmadWahbeh/DS372-Group-3" target="_blank" rel="noopener noreferrer"
+                   class="card-action-btn" aria-label="View code on GitHub">
+                  <i class="ph ph-github-logo" aria-hidden="true"></i>
+                </a>
+                <i class="ph ph-arrow-up-right card-arrow" aria-hidden="true"></i>
+              </div>
+            </div>
+            <h3 class="card-title">Arabic Fake News Detection (AFND)</h3>
+            <p class="card-desc">
+              Developed a comprehensive research-based system to detect misinformation in Arabic media
+              using AraBERT and classical machine learning models. Addresses complex linguistic challenges
+              in Arabic NLP with findings compiled into a ready-to-publish paper.
+            </p>
+            <div class="card-tags">
+              <span class="pill pill-sm">Arabic NLP</span>
+              <span class="pill pill-sm">AraBERT</span>
+              <span class="pill pill-sm">Transformers</span>
+              <span class="pill pill-sm">Machine Learning</span>
+              <span class="pill pill-sm">Regex</span>
+            </div>
+            <div class="card-btns-row">
+              <a href="https://github.com/AhmadWahbeh/DS372-Group-3" target="_blank" rel="noopener noreferrer"
+                 class="btn btn-card">
+                <i class="ph ph-code" aria-hidden="true"></i> View Code
+              </a>
+              <a href="https://arabic-fake-news-ltfshduh9wbprmpd6xjvqn.streamlit.app/" target="_blank" rel="noopener noreferrer"
+                 class="btn btn-card-demo">
+                <i class="ph ph-arrow-square-out" aria-hidden="true"></i> Live Demo
+              </a>
+            </div>
+          </article>
+
+          <!-- 03: Customer Segmentation -->
+          <article class="project-card glass reveal" style="--delay:0.1s" aria-label="Customer Segmentation and Churn Prediction">
+            <div class="card-number" aria-hidden="true">03</div>
+            <div class="card-top">
+              <div class="card-icon-wrap"><i class="ph ph-users-three" aria-hidden="true"></i></div>
+              <div class="card-actions">
+                <a href="https://github.com/AhmadWahbeh/Customer-Segmentation-Churn-Prediction-Project"
+                   target="_blank" rel="noopener noreferrer" class="card-action-btn" aria-label="View code on GitHub">
+                  <i class="ph ph-github-logo" aria-hidden="true"></i>
+                </a>
+                <i class="ph ph-arrow-up-right card-arrow" aria-hidden="true"></i>
+              </div>
+            </div>
+            <h3 class="card-title">Customer Segmentation &amp; Churn Prediction</h3>
+            <p class="card-desc">
+              Developed a high-performing Deep Neural Network achieving 97% accuracy to predict customer
+              churn using telecommunications data. Segmented users into distinct risk clusters using
+              data-driven analysis to deliver actionable, personalized business retention strategies.
+            </p>
+            <div class="card-tags">
+              <span class="pill pill-sm">Deep Learning</span>
+              <span class="pill pill-sm">Machine Learning</span>
+              <span class="pill pill-sm">Data Analysis</span>
+              <span class="pill pill-sm">Python</span>
+            </div>
+            <div class="card-btns-row">
+              <a href="https://github.com/AhmadWahbeh/Customer-Segmentation-Churn-Prediction-Project"
+                 target="_blank" rel="noopener noreferrer" class="btn btn-card">
+                <i class="ph ph-code" aria-hidden="true"></i> View Code
+              </a>
+            </div>
+          </article>
+
+          <!-- 04: ABSA -->
+          <article class="project-card glass reveal" style="--delay:0.15s" aria-label="Aspect-Based Sentiment Analysis">
+            <div class="card-number" aria-hidden="true">04</div>
+            <div class="card-top">
+              <div class="card-icon-wrap"><i class="ph ph-chat-circle-text" aria-hidden="true"></i></div>
+              <div class="card-actions">
+                <a href="https://github.com/AhmadWahbeh/Aspect-Based-Sentiment-Analysis-on-Arabic-Food-Delivery-Reviews-using-ModernBERT"
+                   target="_blank" rel="noopener noreferrer" class="card-action-btn" aria-label="View code on GitHub">
+                  <i class="ph ph-github-logo" aria-hidden="true"></i>
+                </a>
+                <i class="ph ph-arrow-up-right card-arrow" aria-hidden="true"></i>
+              </div>
+            </div>
+            <h3 class="card-title">Aspect-Based Sentiment Analysis for Arabic Food Delivery Reviews using ModernBERT</h3>
+            <p class="card-desc">
+              Fine-tuned a ModernBERT transformer model to perform Aspect-Based Sentiment Analysis on a
+              custom dataset of 23,000+ Arabic tweets. Detects aspect terms, classifies service categories,
+              and predicts sentiment polarity with high precision.
+            </p>
+            <div class="card-tags">
+              <span class="pill pill-sm">Arabic NLP</span>
+              <span class="pill pill-sm">ModernBERT</span>
+              <span class="pill pill-sm">Transformers</span>
+              <span class="pill pill-sm">Sentiment Analysis</span>
+            </div>
+            <div class="card-btns-row">
+              <a href="https://github.com/AhmadWahbeh/Aspect-Based-Sentiment-Analysis-on-Arabic-Food-Delivery-Reviews-using-ModernBERT"
+                 target="_blank" rel="noopener noreferrer" class="btn btn-card">
+                <i class="ph ph-code" aria-hidden="true"></i> View Code
+              </a>
+            </div>
+          </article>
+
+          <!-- 05: Instruction Tuning Qwen -->
+          <article class="project-card glass reveal" style="--delay:0.2s" aria-label="Instruction Tuning Qwen">
+            <div class="card-number" aria-hidden="true">05</div>
+            <div class="card-top">
+              <div class="card-icon-wrap"><i class="ph ph-lightning" aria-hidden="true"></i></div>
+              <div class="card-actions">
+                <a href="https://github.com/AhmadWahbeh/Instruction-Tuning-Qwen-Qwen2.5-1.5B-on-yizhongw-self_instruct"
+                   target="_blank" rel="noopener noreferrer" class="card-action-btn" aria-label="View code on GitHub">
+                  <i class="ph ph-github-logo" aria-hidden="true"></i>
+                </a>
+                <i class="ph ph-arrow-up-right card-arrow" aria-hidden="true"></i>
+              </div>
+            </div>
+            <h3 class="card-title">Instruction Tuning Qwen/Qwen2.5-1.5B</h3>
+            <p class="card-desc">
+              Fine-tuned the open-source Qwen 1.5B Large Language Model on an instruction-style dataset
+              to significantly enhance its instruction-following capabilities. Evaluated pre- and
+              post-training performance using F1, ROUGE-L, and BERTScore metrics.
+            </p>
+            <div class="card-tags">
+              <span class="pill pill-sm">LLM Fine-Tuning</span>
+              <span class="pill pill-sm">Instruction Tuning</span>
+              <span class="pill pill-sm">Qwen</span>
+              <span class="pill pill-sm">NLP</span>
+            </div>
+            <div class="card-btns-row">
+              <a href="https://github.com/AhmadWahbeh/Instruction-Tuning-Qwen-Qwen2.5-1.5B-on-yizhongw-self_instruct"
+                 target="_blank" rel="noopener noreferrer" class="btn btn-card">
+                <i class="ph ph-code" aria-hidden="true"></i> View Code
+              </a>
+            </div>
+          </article>
+
+          <!-- 06: DNN from Scratch -->
+          <article class="project-card glass reveal" style="--delay:0.25s" aria-label="Deep Neural Network from Scratch">
+            <div class="card-number" aria-hidden="true">06</div>
+            <div class="card-top">
+              <div class="card-icon-wrap"><i class="ph ph-graph" aria-hidden="true"></i></div>
+              <div class="card-actions">
+                <a href="https://github.com/AhmadWahbeh/Deep-Neural-Network-for-Regression-from-Scratch-NumPy-"
+                   target="_blank" rel="noopener noreferrer" class="card-action-btn" aria-label="View code on GitHub">
+                  <i class="ph ph-github-logo" aria-hidden="true"></i>
+                </a>
+                <i class="ph ph-arrow-up-right card-arrow" aria-hidden="true"></i>
+              </div>
+            </div>
+            <h3 class="card-title">Deep Neural Network for Regression from Scratch</h3>
+            <p class="card-desc">
+              Built a fully connected deep neural network for regression tasks entirely from scratch
+              using only NumPy. Implemented manual forward and backward propagation, custom ReLU
+              activations, and gradient descent optimization to demonstrate deep mathematical
+              understanding of neural architectures.
+            </p>
+            <div class="card-tags">
+              <span class="pill pill-sm">NumPy</span>
+              <span class="pill pill-sm">Neural Networks</span>
+              <span class="pill pill-sm">Machine Learning</span>
+              <span class="pill pill-sm">Mathematical Modeling</span>
+            </div>
+            <div class="card-btns-row">
+              <a href="https://github.com/AhmadWahbeh/Deep-Neural-Network-for-Regression-from-Scratch-NumPy-"
+                 target="_blank" rel="noopener noreferrer" class="btn btn-card">
+                <i class="ph ph-code" aria-hidden="true"></i> View Code
+              </a>
+            </div>
+          </article>
+
+          <!-- 07: LSTMs -->
+          <article class="project-card glass reveal" style="--delay:0.3s" aria-label="Enhancing Sentiment Classification with LSTMs">
+            <div class="card-number" aria-hidden="true">07</div>
+            <div class="card-top">
+              <div class="card-icon-wrap"><i class="ph ph-wave-sine" aria-hidden="true"></i></div>
+              <div class="card-actions">
+                <a href="https://github.com/AhmadWahbeh/Enhancing-Sentiment-Classification-with-LSTMs"
+                   target="_blank" rel="noopener noreferrer" class="card-action-btn" aria-label="View code on GitHub">
+                  <i class="ph ph-github-logo" aria-hidden="true"></i>
+                </a>
+                <i class="ph ph-arrow-up-right card-arrow" aria-hidden="true"></i>
+              </div>
+            </div>
+            <h3 class="card-title">Enhancing Sentiment Classification with LSTMs</h3>
+            <p class="card-desc">
+              Engineered and evaluated advanced recurrent neural network architectures — including
+              standard, Bidirectional, and Multilayer LSTMs — to enhance sentiment classification on
+              the IMDb dataset. Demonstrated improved sequential data processing compared to baseline
+              RNN models.
+            </p>
+            <div class="card-tags">
+              <span class="pill pill-sm">NLP</span>
+              <span class="pill pill-sm">Deep Learning</span>
+              <span class="pill pill-sm">LSTMs</span>
+              <span class="pill pill-sm">Sentiment Analysis</span>
+            </div>
+            <div class="card-btns-row">
+              <a href="https://github.com/AhmadWahbeh/Enhancing-Sentiment-Classification-with-LSTMs"
+                 target="_blank" rel="noopener noreferrer" class="btn btn-card">
+                <i class="ph ph-code" aria-hidden="true"></i> View Code
+              </a>
+            </div>
+          </article>
+
+          <!-- 08: ResNet -->
+          <article class="project-card glass reveal" style="--delay:0.35s" aria-label="Implementing ResNet-18 in PyTorch">
+            <div class="card-number" aria-hidden="true">08</div>
+            <div class="card-top">
+              <div class="card-icon-wrap"><i class="ph ph-eye" aria-hidden="true"></i></div>
+              <div class="card-actions">
+                <a href="https://github.com/AhmadWahbeh/Implementing-ResNet-in-PyTorch"
+                   target="_blank" rel="noopener noreferrer" class="card-action-btn" aria-label="View code on GitHub">
+                  <i class="ph ph-github-logo" aria-hidden="true"></i>
+                </a>
+                <i class="ph ph-arrow-up-right card-arrow" aria-hidden="true"></i>
+              </div>
+            </div>
+            <h3 class="card-title">Implementing ResNet-18 in PyTorch</h3>
+            <p class="card-desc">
+              Constructed and trained a custom ResNet-18 architecture from scratch using PyTorch for
+              image classification on the CIFAR-10 dataset. Implemented custom residual blocks with
+              skip connections and applied data augmentation to optimize model convergence and
+              generalization.
+            </p>
+            <div class="card-tags">
+              <span class="pill pill-sm">Computer Vision</span>
+              <span class="pill pill-sm">PyTorch</span>
+              <span class="pill pill-sm">Deep Learning</span>
+              <span class="pill pill-sm">Image Classification</span>
+            </div>
+            <div class="card-btns-row">
+              <a href="https://github.com/AhmadWahbeh/Implementing-ResNet-in-PyTorch"
+                 target="_blank" rel="noopener noreferrer" class="btn btn-card">
+                <i class="ph ph-code" aria-hidden="true"></i> View Code
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER / CONTACT ===== -->
+  <footer id="contact" class="footer" aria-label="Contact">
+    <div class="footer-orb" aria-hidden="true"></div>
+    <div class="container footer-inner reveal">
+
+      <div class="footer-headline">
+        <span class="section-tag">// get_in_touch</span>
+        <h2 class="footer-title">Let's Build Something Exceptional</h2>
+        <p class="footer-sub">
+          Whether it's a collaboration, a cutting-edge AI project, or just a hello —
+          let's connect and create intelligent solutions together.
+        </p>
+      </div>
+
+      <div class="contact-cards-grid">
+
+        <!-- Email Card (two addresses) -->
+        <div class="contact-action-card glass" id="cac-email">
+          <div class="cac-glow cac-glow-teal" aria-hidden="true"></div>
+          <div class="cac-icon-wrap cac-icon-teal">
+            <i class="ph ph-envelope-open" aria-hidden="true"></i>
+          </div>
+          <div class="cac-body">
+            <h3 class="cac-title">Send an Email</h3>
+            <div class="cac-email-list">
+              <div class="cac-email-item">
+                <span class="cac-email-badge">Personal</span>
+                <span class="cac-email-addr">ahmadwahbeh04@gmail.com</span>
+                <a href="mailto:ahmadwahbeh04@gmail.com" class="cac-compose-link">
+                  Compose Message <i class="ph ph-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="cac-email-sep" aria-hidden="true"></div>
+              <div class="cac-email-item">
+                <span class="cac-email-badge cac-badge-uni">University</span>
+                <span class="cac-email-addr">aawahbeh22@cit.just.edu.jo</span>
+                <a href="mailto:aawahbeh22@cit.just.edu.jo" class="cac-compose-link">
+                  Send Email <i class="ph ph-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GitHub Card -->
+        <a href="https://github.com/AhmadWahbeh" target="_blank" rel="noopener noreferrer"
+           class="contact-action-card glass" id="cac-github"
+           aria-label="Visit Ahmad Wahbeh's GitHub profile">
+          <div class="cac-glow cac-glow-purple" aria-hidden="true"></div>
+          <div class="cac-icon-wrap cac-icon-purple">
+            <i class="ph ph-github-logo" aria-hidden="true"></i>
+          </div>
+          <div class="cac-body">
+            <h3 class="cac-title">Explore GitHub</h3>
+            <p class="cac-sub">@AhmadWahbeh</p>
+          </div>
+          <span class="cac-action">
+            View Projects <i class="ph ph-arrow-right" aria-hidden="true"></i>
+          </span>
+        </a>
+
+        <!-- LinkedIn Card -->
+        <a href="https://www.linkedin.com/in/ahmad-wahbeh-928133297/" target="_blank" rel="noopener noreferrer"
+           class="contact-action-card glass" id="cac-linkedin"
+           aria-label="Visit Ahmad Wahbeh's LinkedIn profile">
+          <div class="cac-glow cac-glow-blue" aria-hidden="true"></div>
+          <div class="cac-icon-wrap cac-icon-blue">
+            <i class="ph ph-linkedin-logo" aria-hidden="true"></i>
+          </div>
+          <div class="cac-body">
+            <h3 class="cac-title">Connect on LinkedIn</h3>
+            <p class="cac-sub">Ahmad Abdullatif Wahbeh</p>
+          </div>
+          <span class="cac-action">
+            View Profile <i class="ph ph-arrow-right" aria-hidden="true"></i>
+          </span>
+        </a>
+
+      </div>
+
+      <div class="footer-divider" aria-hidden="true"></div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Ahmad Abdullatif Wahbeh. Crafted with precision.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/AhmadWahbeh" target="_blank" rel="noopener noreferrer"
+             class="social-link" aria-label="GitHub">
+            <i class="ph ph-github-logo" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ahmad-wahbeh-928133297/" target="_blank" rel="noopener noreferrer"
+             class="social-link" aria-label="LinkedIn">
+            <i class="ph ph-linkedin-logo" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:ahmadwahbeh04@gmail.com" class="social-link" aria-label="Email">
+            <i class="ph ph-envelope-simple" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

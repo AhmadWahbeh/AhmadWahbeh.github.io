@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"C:\\\\Users\\\\ahmad wahbeh\\\\Desktop\\\\proto\")",
+      "Bash(npm --version)"
+    ]
+  }
+}
