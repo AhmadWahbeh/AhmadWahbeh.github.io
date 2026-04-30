@@ -467,6 +467,16 @@ img { max-width: 100%; display: block; }
   background: rgba(var(--accent-rgb),0.1);
   box-shadow: var(--glow); transform: translateY(-3px);
 }
+.btn-cv {
+  color: #fbbf24;
+  border-color: rgba(251,191,36,0.5);
+}
+.btn-cv:hover {
+  background: rgba(251,191,36,0.1);
+  border-color: #fbbf24;
+  box-shadow: 0 0 24px rgba(251,191,36,0.3);
+  transform: translateY(-3px);
+}
 .btn-card {
   background: transparent; color: var(--accent);
   border: 1.5px solid var(--border);
@@ -989,6 +999,7 @@ img { max-width: 100%; display: block; }
 .cac-glow-teal   { background: radial-gradient(circle, rgba(100,255,218,0.28) 0%, transparent 70%); }
 .cac-glow-purple { background: radial-gradient(circle, rgba(167,139,250,0.32) 0%, transparent 70%); }
 .cac-glow-blue   { background: radial-gradient(circle, rgba(96,165,250,0.32) 0%, transparent 70%); }
+.cac-glow-gold   { background: radial-gradient(circle, rgba(251,191,36,0.32) 0%, transparent 70%); }
 
 .cac-icon-wrap {
   width: 86px; height: 86px;
@@ -1005,9 +1016,11 @@ img { max-width: 100%; display: block; }
 .cac-icon-teal   { background: rgba(100,255,218,0.1); border: 1px solid rgba(100,255,218,0.25); color: var(--accent); }
 .cac-icon-purple { background: rgba(167,139,250,0.1); border: 1px solid rgba(167,139,250,0.25); color: var(--purple); }
 .cac-icon-blue   { background: rgba(96,165,250,0.1);  border: 1px solid rgba(96,165,250,0.25);  color: var(--blue); }
+.cac-icon-gold   { background: rgba(251,191,36,0.1);  border: 1px solid rgba(251,191,36,0.25);  color: #fbbf24; }
 
 #cac-email:hover   { border-color: rgba(100,255,218,0.48); box-shadow: 0 24px 64px rgba(0,0,0,0.5), 0 0 48px rgba(100,255,218,0.14); }
 #cac-github:hover  { border-color: rgba(167,139,250,0.48); box-shadow: 0 24px 64px rgba(0,0,0,0.5), 0 0 48px rgba(167,139,250,0.18); }
+#cac-cv:hover      { border-color: rgba(251,191,36,0.48);  box-shadow: 0 24px 64px rgba(0,0,0,0.5), 0 0 48px rgba(251,191,36,0.18); }
 #cac-linkedin:hover{ border-color: rgba(96,165,250,0.48);  box-shadow: 0 24px 64px rgba(0,0,0,0.5), 0 0 48px rgba(96,165,250,0.18); }
 
 .cac-body { position: relative; z-index: 1; width: 100%; }
