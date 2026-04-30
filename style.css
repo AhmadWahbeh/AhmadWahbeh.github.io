@@ -688,6 +688,16 @@ img { max-width: 100%; display: block; }
   background: #EAF3DE;
   color: #3B6D11;
 }
+.badge-co {
+  background: rgba(0,86,210,0.12);
+  border: 1px solid rgba(0,86,210,0.3);
+  color: #60a5fa;
+}
+.badge-ms {
+  background: rgba(0,120,212,0.12);
+  border: 1px solid rgba(0,120,212,0.3);
+  color: #38bdf8;
+}
 
 /* Certification Grid (2×2) */
 .cert-grid {
@@ -698,6 +708,8 @@ img { max-width: 100%; display: block; }
 
 /* Cert Card */
 .cert-card {
+  position: relative;
+  overflow: hidden;
   border-radius: var(--radius-lg);
   padding: 32px;
   display: flex; flex-direction: column;
@@ -763,6 +775,27 @@ img { max-width: 100%; display: block; }
   border-color: var(--accent);
   background: rgba(var(--accent-rgb),0.08);
   transform: translateY(-2px);
+}
+
+.cert-status-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 9px 18px;
+  border-radius: 8px; font-size: 0.82rem;
+  font-weight: 600; color: #fbbf24;
+  border: 1.5px solid rgba(251,191,36,0.28);
+  background: rgba(251,191,36,0.06);
+  width: fit-content; margin-top: 4px;
+  font-family: var(--font-mono); letter-spacing: 0.04em;
+}
+.cert-status-badge::before {
+  content: '';
+  width: 7px; height: 7px; border-radius: 50%;
+  background: #fbbf24; flex-shrink: 0;
+  animation: pulse-amber 1.8s ease-in-out infinite;
+}
+@keyframes pulse-amber {
+  0%,100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.8); }
 }
 
 /* =========================================
